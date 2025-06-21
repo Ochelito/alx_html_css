@@ -1,0 +1,65 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    min-height: 32px;
+    min-width: 1000px;
+}
+
+#banner {
+    min-height: 800px;
+    height: 100%;
+    justify-content: center;
+}
+
+#WhatWeDo {
+    min-height: 700px;
+    height: 100%;
+    justify-content: center;
+}
+
+#MoreInfo {
+    min-height: 650px;
+    height: 100%;
+    justify-content: center;
+}
+
+#ContactUs {
+    min-height: 650px;
+    height: 100%;
+    justify-content: center;
+}
+
+#footer {
+    min-height: 250px;
+    height: 100%;
+}
+
+@media screen and (max-width:768px) {
+    .works_on_smartphone {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .works_on_smartphone > * {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
