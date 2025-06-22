@@ -1,3 +1,14 @@
+<!--Copy files from the previous task.
+
+In this task, you’ll enhance the responsiveness of your page by adding a hamburger menu using JavaScript so that it looks like the images we’ve shared in the previous tasks.
+
+On screens 480px or less:
+- Show a hamburger icon instead of the full navigation links
+- When clicked, the icon should toggle the menu open and close
+- Use JavaScript (no frameworks)
+
+Keep your styles clean and animations smooth.-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,16 +17,22 @@
     <title>Headphones</title>
     <link href="style.css" rel="stylesheet" />
     <link href="demo.css" rel="stylesheet" />
-    <link href="0-styles.css" rel="stylesheet" />
+    <link href="7-styles.css" rel="stylesheet" />
 </head>
 
 <body class="works_on_smartphone">
     <div class="page-container">
         <header class="top-bar">
             <nav class="nav-bar">
-                <a href="0-index.html" class="logo-link">
+                <a href="7-index.html" class="logo-link">
                     <img src="images/logo_headphones.png" alt="Headphones" class="logo" />
                 </a>
+
+                <!-- Hamburger icon -->
+                <div class="hamburger" id="hamburger">
+                    ☰
+                </div>
+
                 <ul class="nav-menu">
                     <li><a href="#">what we do</a></li>
                     <li><a href="#">our results</a></li>
@@ -56,19 +73,19 @@
                             </p>
                         </div>
                         <div class="logofonts">
-                            <div class="logofonts-body">
+                            <div class="logofonts-body fade-in">
                                 <span class="holberton_school-icon-ic_sound"></span>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
-                            <div class="logofonts-body">
+                            <div class="logofonts-body fade-in">
                                 <span class="holberton_school-icon-ic_video"></span>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
-                            <div class="logofonts-body">
+                            <div class="logofonts-body fade-in">
                                 <span class="holberton_school-icon-ic_music"></span>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
-                            <div class="logofonts-body">
+                            <div class="logofonts-body fade-in">
                                 <span class="holberton_school-icon-ic_hearing"></span>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
@@ -140,7 +157,7 @@
         </main>
         <footer id="footer">
             <div class="foot">
-                <a href="0-index.html">
+                <a href="7-index.html">
                     <img src="images/logo_headphones.png" alt="logo" class="flogo">
                 </a>
                 <div class="copyright">©headphones 2025</div>
